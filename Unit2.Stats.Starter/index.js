@@ -45,7 +45,11 @@ function getLength(numbers) {
  * @returns {number} the sum of the numbers
  */
 function getSum(numbers) {
-  // TODO
+  let sum=0;
+  for (let i=0; i < numbers.length; i++){
+    sum = numbers[i]
+  }
+  return sum;
 }
 
 /**
@@ -53,7 +57,11 @@ function getSum(numbers) {
  * @returns {number} the mean of the numbers
  */
 function getMean(numbers) {
-  // TODO
+  let sum = 0;
+for(let i = 0; i < numbers.length; i++) {
+  sum += numbers[i];
+}
+const average = sum / numbers.length;
 }
 
 /**
@@ -61,7 +69,10 @@ function getMean(numbers) {
  * @returns {number} the smallest of the numbers
  */
 function getMin(numbers) {
-  // TODO
+  Array.min = function(array){
+    return Math.min.apply(Math, array);
+  };
+  let minimum = Array.min(array);
 }
 
 /**
@@ -69,7 +80,10 @@ function getMin(numbers) {
  * @returns {number} the largest of the numbers
  */
 function getMax(numbers) {
-  // TODO
+  Array.max = function(array){
+    return Math.max.apply(Math, array);
+  };
+  let minimum = Array.max(array);
 }
 
 /**
